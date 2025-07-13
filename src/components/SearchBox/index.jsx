@@ -7,7 +7,7 @@ const SearchBox = () => {
   const dispatch = useDispatch();
 
   const handleChange = e => {
-    dispatch(changeFilter(e.target.value.trim()));
+    dispatch(changeFilter(e.target.value));
   };
 
   return (
