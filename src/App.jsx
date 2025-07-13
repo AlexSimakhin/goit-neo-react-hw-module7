@@ -22,7 +22,7 @@ const App = () => {
       <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox />
-      {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+      {error && <p className={css.error}>Error: {error}</p>}
       {loading && <p>Loading contacts...</p>}
       <ContactList />
     </div>
